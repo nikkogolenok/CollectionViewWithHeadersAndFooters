@@ -21,6 +21,12 @@ class ViewController: UIViewController {
         createDelegateAndOther()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        collectionView?.frame = view.bounds
+    }
+    
     // MARK: - Methods
     func createDelegateAndOther() {
         let layout = UICollectionViewFlowLayout()

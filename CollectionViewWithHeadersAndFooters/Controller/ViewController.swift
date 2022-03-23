@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         layout.itemSize = CGSize(width: view.frame.size.width/2.2,
                                  height: view.frame.size.width/2.2)
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView?.register(MyCollectionViewCell.nib(), forCellWithReuseIdentifier: MyCollectionViewCell.identifier)
         collectionView?.delegate = self
         collectionView?.dataSource = self
         view.addSubview(collectionView!)

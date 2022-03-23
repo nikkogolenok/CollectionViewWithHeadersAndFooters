@@ -8,9 +8,17 @@
 import UIKit
 
 class MyCollectionViewCell: UICollectionViewCell {
-
+    
+    // MARK: - Variable
+    static let identifier = "MyCollectionViewCell"
+    
+    // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
+    // MARK: - Methods
+    static func nib() -> UINib {
+        return UINib(nibName: "MyCollectionViewCell", bundle: nil )
+    }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4481CF8E27EB63BC00384E4C /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481CF8C27EB63BC00384E4C /* MyCollectionViewCell.swift */; };
 		4481CF8F27EB63BC00384E4C /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4481CF8D27EB63BC00384E4C /* MyCollectionViewCell.xib */; };
+		4481CF9227EB698000384E4C /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481CF9127EB698000384E4C /* HeaderCollectionReusableView.swift */; };
+		4481CF9427EC496900384E4C /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481CF9327EC496900384E4C /* FooterCollectionReusableView.swift */; };
 		44E4112527EB5B4C00A66BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4112427EB5B4C00A66BB6 /* AppDelegate.swift */; };
 		44E4112727EB5B4C00A66BB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4112627EB5B4C00A66BB6 /* SceneDelegate.swift */; };
 		44E4112927EB5B4C00A66BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4112827EB5B4C00A66BB6 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		4481CF8C27EB63BC00384E4C /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		4481CF8D27EB63BC00384E4C /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		4481CF9127EB698000384E4C /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		4481CF9327EC496900384E4C /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		44E4112127EB5B4C00A66BB6 /* CollectionViewWithHeadersAndFooters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewWithHeadersAndFooters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E4112427EB5B4C00A66BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E4112627EB5B4C00A66BB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +56,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		4481CF9027EB68F400384E4C /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				4481CF9127EB698000384E4C /* HeaderCollectionReusableView.swift */,
+				4481CF9327EC496900384E4C /* FooterCollectionReusableView.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
 		44E4111827EB5B4C00A66BB6 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +86,10 @@
 			children = (
 				44E4113B27EB600A00A66BB6 /* Extension */,
 				44E4113827EB5B6B00A66BB6 /* SupportFiles */,
-				44E4113927EB5BA700A66BB6 /* Controller */,
 				44E4113A27EB5BB800A66BB6 /* View */,
+				44E4113927EB5BA700A66BB6 /* Controller */,
 				4481CF8B27EB634800384E4C /* Cell */,
+				4481CF9027EB68F400384E4C /* ReusableView */,
 			);
 			path = CollectionViewWithHeadersAndFooters;
 			sourceTree = "<group>";
@@ -188,10 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4481CF9427EC496900384E4C /* FooterCollectionReusableView.swift in Sources */,
 				44E4112927EB5B4C00A66BB6 /* ViewController.swift in Sources */,
 				4481CF8E27EB63BC00384E4C /* MyCollectionViewCell.swift in Sources */,
 				44E4112527EB5B4C00A66BB6 /* AppDelegate.swift in Sources */,
 				44E4113D27EB601C00A66BB6 /* ViewController+Ext.swift in Sources */,
+				4481CF9227EB698000384E4C /* HeaderCollectionReusableView.swift in Sources */,
 				44E4112727EB5B4C00A66BB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

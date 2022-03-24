@@ -15,6 +15,7 @@ class MyCollectionViewCell: UICollectionViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = .link
     }
     
     // MARK: - Methods
